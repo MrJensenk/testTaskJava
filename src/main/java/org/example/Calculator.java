@@ -1,10 +1,9 @@
 package org.example;
 
 public class Calculator implements CalcApp<Double> {
-    public Calculator() {
-        super();
-    }
+    public Calculator(){
 
+    }
     @Override
     public Double sumExpression(Double a, Double b) {
         return a + b;
@@ -26,11 +25,11 @@ public class Calculator implements CalcApp<Double> {
 
     @Override
     public Double mulExpression(Double a, Double b) {
-        return 0.0;
+        return a * b;
     }
 
     @Override
     public Double subExpression(Double a, Double b) {
-        return 0.0;
+        return a - b;
     }
 }
